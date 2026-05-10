@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pengaduan Warga - RT 06 RW 13 Relife Greenville Cileungsi Cluster Lakesville</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f8fb;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0f766e, #2563eb);
+      color: white;
+      padding: 35px 20px;
+      text-align: center;
+    }
+
+    .header-content {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+    }
+
+    .header-logo {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      background: white;
+      padding: 6px;
+      border-radius: 12px;
+    }
+
+    .header-text h1 {
+      margin: 0;
+      font-size: 30px;
+    }
+
+    .header-text p {
+      margin: 8px 0 0;
+      text-align: center;
+      font-size: 15px;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 45px 20px;
+    }
+
+    .back {
+      display: inline-block;
+      margin-bottom: 20px;
+      color: #0f766e;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .back:hover {
+      color: #2563eb;
+      text-decoration: underline;
+    }
+
+    .box {
+      background: white;
+      padding: 28px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      margin-bottom: 24px;
+    }
+
+    h2 {
+      color: #0f766e;
+      margin-top: 0;
+      margin-bottom: 18px;
+      font-size: 26px;
+    }
+
+    h3 {
+      color: #2563eb;
+      margin-top: 0;
+    }
+
+    p {
+      text-align: justify;
+    }
+
+    .intro {
+      text-align: center;
+    }
+
+    .intro h2 {
+      text-align: center;
+      font-size: 28px;
+    }
+
+    .intro p {
+      max-width: 820px;
+      margin: 10px auto;
+      text-align: center;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #f8fafc;
+      padding: 22px;
+      border-radius: 14px;
+      border-left: 5px solid #0f766e;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #0f766e;
+    }
+
+    .card p {
+      text-align: left;
+      margin-bottom: 0;
+    }
+
+    ol, ul {
+      padding-left: 22px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .steps {
+      display: grid;
+      gap: 16px;
+    }
+
+    .step {
+      background: #f8fafc;
+      padding: 18px;
+      border-radius: 14px;
+      border-left: 5px solid #2563eb;
+    }
+
+    .step h3 {
+      color: #2563eb;
+      margin-bottom: 8px;
+    }
+
+    .step p {
+      text-align: left;
+      margin: 0;
+    }
+
+    .btn-area {
+      text-align: center;
+      margin-top: 18px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 22px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      background: #0f766e;
+      color: white;
+      margin: 6px;
+    }
+
+    .btn:hover {
+      background: #115e59;
+    }
+
+    .btn-secondary {
+      background: #2563eb;
+    }
+
+    .btn-secondary:hover {
+      background: #1d4ed8;
+    }
+
+    .notice {
+      background: #eff6ff;
+      border-left: 5px solid #2563eb;
+      padding: 18px;
+      border-radius: 12px;
+      margin-top: 16px;
+    }
+
+    .notice p {
+      margin: 0;
+      text-align: justify;
+    }
+
+    .warning {
+      background: #fff7ed;
+      border-left: 5px solid #f97316;
+      padding: 18px;
+      border-radius: 12px;
+      margin-top: 16px;
+    }
+
+    .warning p {
+      margin: 0;
+      text-align: justify;
+    }
+
+    footer {
+      background: #111827;
+      color: white;
+      text-align: center;
+      padding: 18px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .header-content {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .header-logo {
+        width: 70px;
+        height: 70px;
+      }
+
+      .header-text h1 {
+        font-size: 23px;
+      }
+
+      section {
+        padding: 32px 14px;
+      }
+
+      .box {
+        padding: 22px;
+      }
+
+      h2,
+      .intro h2 {
+        font-size: 23px;
+      }
+
+      .btn {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="header-content">
+      <img src="images/logo-bekasi.jpg" alt="Logo Kabupaten Bekasi" class="header-logo">
+
+      <div class="header-text">
+        <h1>Pengaduan Warga</h1>
+        <p>RT 06 / RW 13 Relife Greenville Cileungsi Cluster Lakesville</p>
+      </div>
+
+      <img src="images/logo-rt.png" alt="Logo RT 006 RW 13" class="header-logo">
+    </div>
+  </header>
+
+  <section>
+    <a href="index.html" class="back">← Kembali ke Beranda</a>
+
+    <div class="box intro">
+      <h2>Form Pengaduan dan Aspirasi Warga</h2>
+      <p>
+        Halaman ini disediakan sebagai sarana bagi warga RT 06 / RW 13 Relife Greenville Cileungsi Cluster Lakesville
+        untuk menyampaikan laporan, keluhan, saran, atau aspirasi terkait lingkungan.
+      </p>
+      <p>
+        Setiap laporan yang masuk akan diterima oleh pengurus RT dan ditindaklanjuti
+        sesuai kebutuhan serta kewenangan pengurus.
+      </p>
+
+      <div class="btn-area">
+        <a 
+          href="https://forms.gle/6UG8baBZwFdLyW8p8"
+          target="_blank"
+          class="btn"
+        >
+          Isi Form Pengaduan
+        </a>
+      </div>
+    </div>
+
+    <div class="box">
+      <h2>Jenis Laporan yang Dapat Disampaikan</h2>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Keamanan</h3>
+          <p>Laporan terkait kejadian mencurigakan, kehilangan, gangguan keamanan, atau kondisi darurat lingkungan.</p>
+        </div>
+
+        <div class="card">
+          <h3>Kebersihan</h3>
+          <p>Laporan mengenai sampah, saluran air, kebersihan jalan, atau kondisi lingkungan yang perlu diperhatikan.</p>
+        </div>
+
+        <div class="card">
+          <h3>Fasilitas Lingkungan</h3>
+          <p>Laporan terkait kerusakan fasilitas umum, lampu jalan, taman, jalan lingkungan, atau sarana bersama.</p>
+        </div>
+
+        <div class="card">
+          <h3>Iuran dan Keuangan</h3>
+          <p>Pertanyaan atau klarifikasi terkait iuran warga, konfirmasi pembayaran, atau informasi kas lingkungan.</p>
+        </div>
+
+        <div class="card">
+          <h3>Administrasi Warga</h3>
+          <p>Laporan atau pertanyaan mengenai surat pengantar, update data warga, dan kebutuhan administrasi RT.</p>
+        </div>
+
+        <div class="card">
+          <h3>Saran / Aspirasi</h3>
+          <p>Masukan, usulan program, ide kegiatan, atau aspirasi untuk kemajuan lingkungan RT.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="box">
+      <h2>Data yang Perlu Diisi</h2>
+
+      <ul>
+        <li>Nama lengkap pelapor.</li>
+        <li>Nomor rumah atau blok.</li>
+        <li>Nomor WhatsApp aktif.</li>
+        <li>Jenis laporan atau pengaduan.</li>
+        <li>Isi laporan secara jelas dan sopan.</li>
+        <li>Foto pendukung jika diperlukan dan tersedia.</li>
+      </ul>
+
+      <div class="notice">
+        <p>
+          Catatan: Data pelapor digunakan oleh pengurus RT untuk proses verifikasi
+          dan tindak lanjut laporan. Data pribadi tidak ditampilkan secara terbuka
+          di website.
+        </p>
+      </div>
+    </div>
+
+    <div class="box">
+      <h2>Alur Penanganan Pengaduan</h2>
+
+      <div class="steps">
+        <div class="step">
+          <h3>1. Warga Mengisi Form</h3>
+          <p>Warga mengisi form pengaduan melalui tombol yang tersedia di halaman ini.</p>
+        </div>
+
+        <div class="step">
+          <h3>2. Laporan Diterima Pengurus</h3>
+          <p>Laporan masuk ke rekap pengurus RT dan dapat diterima melalui notifikasi email.</p>
+        </div>
+
+        <div class="step">
+          <h3>3. Verifikasi Laporan</h3>
+          <p>Pengurus memeriksa isi laporan dan dapat menghubungi pelapor untuk klarifikasi jika diperlukan.</p>
+        </div>
+
+        <div class="step">
+          <h3>4. Tindak Lanjut</h3>
+          <p>Pengurus menindaklanjuti laporan sesuai jenis masalah, prioritas, dan kewenangan RT.</p>
+        </div>
+
+        <div class="step">
+          <h3>5. Konfirmasi / Informasi Lanjutan</h3>
+          <p>Jika diperlukan, pengurus memberikan informasi lanjutan kepada pelapor atau warga melalui media resmi RT.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="box">
+      <h2>Etika Menyampaikan Pengaduan</h2>
+
+      <ul>
+        <li>Gunakan bahasa yang sopan dan jelas.</li>
+        <li>Sampaikan laporan berdasarkan kejadian atau fakta yang diketahui.</li>
+        <li>Hindari menyebarkan informasi yang belum terverifikasi.</li>
+        <li>Gunakan jalur pengaduan untuk kepentingan bersama, bukan untuk menyerang pribadi.</li>
+        <li>Lampirkan foto atau bukti pendukung jika tersedia.</li>
+      </ul>
+
+      <div class="warning">
+        <p>
+          Pengaduan yang bersifat darurat, seperti tindak kriminal, kebakaran,
+          atau kondisi medis darurat, sebaiknya segera menghubungi nomor darurat
+          atau pihak keamanan setempat terlebih dahulu.
+        </p>
+      </div>
+    </div>
+
+    <div class="box">
+      <h2>Ajukan Pengaduan</h2>
+
+      <p>
+        Silakan klik tombol di bawah ini untuk mengisi form pengaduan atau aspirasi warga.
+        Pastikan laporan disampaikan dengan jelas agar pengurus dapat memahami dan
+        menindaklanjuti dengan tepat.
+      </p>
+
+      <div class="btn-area">
+        <a 
+          href="https://forms.gle/6UG8baBZwFdLyW8p8"
+          target="_blank"
+          class="btn"
+        >
+          Isi Form Pengaduan Warga
+        </a>
+
+        <a 
+          href="index.html"
+          class="btn btn-secondary"
+        >
+          Kembali ke Beranda
+        </a>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    &copy; 2026 RT 06 / RW 13 Relife Greenville Cileungsi Cluster Lakesville. All rights reserved.
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal Warga RT 06 RW 13 Relife Greenville Cileungsi Cluster Lakesville</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f8fb;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0f766e, #2563eb);
+      color: white;
+      padding: 24px 20px;
+      text-align: center;
+    }
+
+    .header-content {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+    }
+
+    .header-logo {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      background: white;
+      padding: 6px;
+      border-radius: 12px;
+    }
+
+    .header-text {
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    header p {
+      margin: 8px 0 0;
+      font-size: 15px;
+    }
+
+    .navbar {
+      background: white;
+      padding: 12px 20px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    } 
+
+    .navbar a,
+    .dropbtn {
+      color: #0f766e;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 12px;
+      font-size: 14px;
+      border: none;
+      background: none;
+      cursor: pointer;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar a:hover,
+    .dropbtn:hover {
+      color: #2563eb;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background: white;
+      min-width: 220px;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+      border-radius: 10px;
+      overflow: hidden;
+      z-index: 999;
+      text-align: left;
+      top: 100%;
+      left: 0;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 12px 14px;
+      color: #0f766e;
+      text-decoration: none;
+      font-size: 14px;
+      border-bottom: 1px solid #f1f5f9;
+    }
+
+    .dropdown-content a:hover {
+      background: #f4f8fb;
+      color: #2563eb;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+
+    .hero {
+      padding: 60px 20px;
+      text-align: center;
+      background: white;
+    }
+
+    .hero h2 {
+      font-size: 34px;
+      margin-bottom: 12px;
+      color: #0f766e;
+    }
+
+    .hero p {
+      max-width: 760px;
+      margin: 0 auto 24px;
+      font-size: 17px;
+    }
+
+    .btn-group {
+      margin-top: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      margin: 6px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .btn-primary {
+      background: #0f766e;
+      color: white;
+    }
+
+    .btn-secondary {
+      background: #2563eb;
+      color: white;
+    }
+
+    section {
+      padding: 45px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      color: #0f766e;
+      margin-bottom: 24px;
+      font-size: 28px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      align-items: stretch;
+    }
+
+    .card {
+      background: white;
+      padding: 22px;
+      border-radius: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .card p {
+      text-align: justify;
+    }
+
+    .card-img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 16px;
+    }
+
+    .card .btn {
+      margin-top: auto;
+      align-self: flex-start;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #2563eb;
+    }
+
+    .announcement {
+      border-left: 5px solid #0f766e;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 5px 10px;
+      border-radius: 20px;
+      background: #e0f2fe;
+      color: #0369a1;
+      font-size: 12px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .date {
+      font-size: 13px;
+      color: #6b7280;
+      margin-bottom: 8px;
+    }
+
+    .profile-box {
+      background: white;
+      padding: 24px;
+      border-radius: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .contact-box {
+      text-align: center;
+      background: linear-gradient(135deg, #0f766e, #2563eb);
+      color: white;
+      padding: 35px 20px;
+      border-radius: 16px;
+    }
+
+    .contact-box a {
+      color: white;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #111827;
+      color: white;
+      padding: 35px 20px 15px;
+      font-size: 14px;
+    }
+
+    .footer-content {
+      max-width: 1100px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+      text-align: left;
+    }
+
+    .footer-box h3 {
+      margin-top: 0;
+      color: #ffffff;
+    }
+
+    .footer-box p {
+      margin: 6px 0;
+      color: #d1d5db;
+    }
+
+    .footer-box a {
+      color: #d1d5db;
+      text-decoration: none;
+    }
+
+    .footer-box a:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #374151;
+      margin-top: 25px;
+      padding-top: 14px;
+      text-align: center;
+      color: #d1d5db;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 22px;
+      }
+
+      .hero h2 {
+        font-size: 26px;
+      }
+
+      .navbar {
+  justify-content: flex-start;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+}
+
+.dropdown-content {
+  position: fixed;
+  left: 12px;
+  right: 12px;
+  top: auto;
+  min-width: auto;
+}
+      
+      nav a {
+        display: inline-block;
+        margin: 6px;
+      }
+
+      .header-content {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .header-logo {
+        width: 70px;
+        height: 70px;
+      }
+
+      section {
+        padding: 32px 14px;
+      }
+
+      section h2 {
+        font-size: 24px;
+      }
+
+      .hero {
+        padding: 42px 16px;
+      }
+
+      .hero p {
+        font-size: 15px;
+      }
+
+      .card {
+        padding: 18px;
+      }
+
+      .btn {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+  <div class="header-content">
+    <img src="images/logo-bekasi.jpg" alt="Logo Kabupaten Bekasi" class="header-logo">
+
+    <div class="header-text">
+      <h1>RT 006 / RW 13 Relife Greenville Cileungsi</h1>
+      <h1>Cluster Lakesville</h1>
+      <p>Portal Informasi Warga</p>
+    </div>
+
+    <img src="images/logo-rt.png" alt="Logo RT 006 RW 13" class="header-logo">
+  </div>
+</header>
+
+  <nav class="navbar">
+    <a href="index.html">Beranda</a>
+
+    <div class="dropdown">
+    <button class="dropbtn">Profil RT ▾</button>
+    <div class="dropdown-content">
+      <a href="profil.html">Tentang RT</a>
+      <a href="ad-art.html">AD/ART</a>
+      <a href="program-kerja-2026-2031.html">Program Kerja 2026–2031</a>
+    </div>
+    </div>
+
+    <a href="#pengumuman">Pengumuman</a>
+
+    <div class="dropdown">
+    <button class="dropbtn">Layanan ▾</button>
+    <div class="dropdown-content">
+      <a href="layanan-surat.html">Layanan Surat Pengantar</a>
+      <a href="layanan-update-data.html">Update Data Warga</a>
+      <a href="layanan-pengaduan.html">Pengaduan Warga</a>
+    </div>
+    </div>
+
+    <a href="#iuran">Iuran Warga</a>
+
+  <div class="dropdown">
+    <button class="dropbtn">Data Warga ▾</button>
+    <div class="dropdown-content">
+      <a href="data-warga.html">Aplikasi Database</a>
+      <a href="keuangan.html">Aplikasi Keuangan</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <button class="dropbtn">Kegiatan ▾</button>
+    <div class="dropdown-content">
+      <a href="galeri.html">Galeri</a>
+    </div>
+  </div>
+
+    <a href="#keamanan">Keamanan</a>
+
+    <a href="#kontak">Kontak</a>
+</nav>
+
+  <div class="hero" id="beranda">
+    <h2>Selamat Datang di Portal Warga</h2>
+    <p>
+      Website ini dibuat sebagai media informasi, komunikasi, dan pelayanan warga
+      RT 006 / RW 13 Relife Greenville Cileungsi Cluster Lakesville agar seluruh informasi lingkungan
+      dapat diakses dengan mudah, rapi, dan transparan.
+    </p>
+
+    <div class="btn-group">
+      <a href="#pengumuman" class="btn btn-primary">Lihat Pengumuman</a>
+      <a href="#kontak" class="btn btn-secondary">Hubungi Pengurus</a>
+    </div>
+  </div>
+
+  <section id="profil">
+    <h2>Profil RT</h2>
+
+    <div class="profile-box">
+      <p>
+        RT 006 / RW 13 Relife Greenville Cileungsi Cluster Lakesville merupakan lingkungan warga yang berada
+        di wilayah Desa Cikarageman, Kecamatan Setu, Kabupaten Bekasi, Provinsi Jawa Barat. Website ini menjadi sarana informasi resmi untuk
+        mendukung komunikasi antara pengurus dan warga.
+      </p>
+
+      <h3>Struktur Pengurus</h3>
+      <ul>
+        <li>Ketua RT                        : Mahmud Koswara</li>
+        <li>Sekretaris                      : Ayus Darusman</li>
+        <li>Bendahara                       : Harry Fardyansyah</li>
+        <li>Seksi Keamanan   : Aris Wardiana</li>
+        <li>Seksi Olahraga                  : Asep Saripudin</li>
+        <li>Seksi Kerohanian                : Permana Ganda Saputra</li>
+        <li>Seksi Lingkungan Hidup          : Sandi Yudha</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="pengumuman">
+  <h2>Pengumuman Warga</h2>
+
+  <div class="cards">
+    <div class="card announcement">
+      <span class="badge">Kebersihan</span>
+      <div class="date">Diperbarui: 4 Mei 2026</div>
+      <h3>Kerja Bakti Lingkungan</h3>
+      <p>
+        Kegiatan kerja bakti akan diinformasikan melalui website ini dan grup
+        WhatsApp warga. Mohon warga dapat berpartisipasi sesuai jadwal yang
+        ditentukan.
+      </p>
+    </div>
+
+    <div class="card announcement">
+      <span class="badge">Keuangan</span>
+      <div class="date">Diperbarui: 4 Mei 2026</div>
+      <h3>Iuran Bulanan</h3>
+      <p>
+        Informasi iuran bulanan, jadwal pembayaran, dan konfirmasi pembayaran
+        dapat dilakukan melalui Bendahara RT.
+      </p>
+    </div>
+
+    <div class="card announcement">
+      <span class="badge">Keamanan</span>
+      <div class="date">Diperbarui: 4 Mei 2026</div>
+      <h3>Keamanan Lingkungan</h3>
+      <p>
+        Warga dihimbau untuk tetap menjaga keamanan lingkungan dan segera
+        melaporkan hal mencurigakan kepada pengurus RT.
+      </p>
+    </div>
+  </div>
+  </section>
+
+  <section id="layanan">
+    <h2>Layanan Warga</h2>
+
+    <div class="cards">
+      <div class="card">
+      <h3>Surat Pengantar</h3>
+      <p>
+      Layanan pengajuan surat pengantar domisili, pindah, keterangan warga,
+      dan kebutuhan administrasi lainnya.
+      </p>
+
+      <a 
+      href="https://forms.gle/nZWXZsuqdVi3GA7E8"
+      target="_blank"
+      class="btn btn-primary"
+      >
+      Ajukan Surat Pengantar
+      </a>
+      </div>
+
+      <div class="card">
+        <h3>Update Data Warga</h3>
+        <p>
+          Warga dapat melakukan pembaruan data keluarga melalui form atau
+          menghubungi pengurus RT.
+        </p>
+
+        <a 
+        href="https://forms.gle/emSiVautMjsr7aZS8"
+        target="_blank"
+        class="btn btn-secondary"
+      >
+        Form Update Data
+      </a>
+      </div>
+
+      <div class="card">
+        <h3>Pengaduan Warga</h3>
+        <p>
+          Warga dapat menyampaikan aspirasi, laporan, atau keluhan terkait
+          lingkungan kepada pengurus.
+        </p>
+
+
+        <a 
+          href="https://forms.gle/6UG8baBZwFdLyW8p8"
+          target="_blank"
+          class="btn btn-secondary"
+        >
+        Isi Form Pengaduan
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="iuran">
+  <h2>Iuran & Keuangan</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Iuran Bulanan</h3>
+      <p>
+        Informasi iuran bulanan warga RT 006 / RW 13 Relife Greenville Cileungsi Cluster Lakesville.
+        Besaran iuran dan jadwal pembayaran dapat disesuaikan berdasarkan
+        ketentuan pengurus RT.
+      </p>
+
+      <ul>
+        <li>Iuran kas RT periode sebelumnya : Rp 50.000 / bulan</li>
+        <li>Iuran kas RT periode saat ini   : Rp 35.000 / bulan</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Pembayaran Iuran</h3>
+      <p>
+        Pembayaran iuran dapat dilakukan melalui transfer atau menghubungi
+        Bendahara RT.
+      </p>
+
+      <ul>
+        <li>Bank          : BCA</li>
+        <li>No. Rekening  : 7402432694</li>
+        <li>Atas Nama     : Harry Fardyansyah</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Konfirmasi Pembayaran</h3>
+      <p>
+        Setelah melakukan pembayaran, warga dapat mengirimkan bukti transfer
+        kepada Bendahara RT melalui WhatsApp.
+      </p>
+
+      <a 
+        href="https://wa.me/6282111126555?text=Halo%20Bendahara%20RT%20006%20RW%2013%2C%20saya%20ingin%20konfirmasi%20pembayaran%20iuran."
+        target="_blank"
+        class="btn btn-primary"
+      >
+        Konfirmasi ke Bendahara
+      </a>
+    </div>
+  </div>
+  </section>
+
+  <section id="data-warga">
+  <h2>Data Warga</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Aplikasi Database Warga</h3>
+      <p>
+        Menu ini digunakan untuk mengakses aplikasi database warga RT 06 / RW 13
+        Relife Greenville Cileungsi Cluster Lakesville. Data warga hanya dapat diakses oleh pengurus atau pihak
+        yang memiliki izin.
+      </p>
+
+      <a 
+        href="https://script.google.com/macros/s/AKfycby3YRzpDH_KGTwtklGGsXfjaEDuzSSVuhXXGz9F9oOXXDay7cFR7JpsziOaFPTY2xNM/exec"
+        target="_blank"
+        class="btn btn-primary"
+      >
+        Buka Database Warga
+      </a>
+    </div>
+
+    <div class="card">
+      <h3>Update Data Keluarga</h3>
+      <p>
+        Warga dapat mengajukan pembaruan data keluarga, perubahan nomor HP,
+        anggota keluarga baru, atau perubahan status domisili melalui pengurus RT.
+      </p>
+
+      <a 
+        href="https://forms.gle/emSiVautMjsr7aZS8"
+        target="_blank"
+        class="btn btn-secondary"
+      >
+        Form Update Data
+      </a>
+    </div>
+
+    <div class="card">
+      <h3>Keamanan Data</h3>
+      <p>
+        Informasi pribadi warga tidak ditampilkan secara terbuka di website ini.
+        Akses data warga dibatasi untuk menjaga keamanan dan kerahasiaan data.
+      </p>
+    </div>
+  </div>
+  </section>
+
+  <section id="kegiatan">
+  <h2>Kegiatan Warga</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Kerja Bakti</h3>
+      <img src="images/kerja-bakti-2.jpeg" alt="Dokumentasi Kerja Bakti Warga" class="card-img">
+      <p>
+        Dokumentasi kegiatan kerja bakti warga dalam menjaga kebersihan,
+        kerapian, dan kenyamanan lingkungan RT 006 / RW 13.
+      </p>
+      <p><strong>Status:</strong> Dokumentasi akan ditambahkan.</p>
+    </div>
+
+    <div class="card">
+      <h3>Rapat Warga</h3>
+      <img src="images/rapat-pemilihan-ketua-rt.jpeg" alt="Dokumentasi Rapat Warga" class="card-img">
+      <p>
+        Informasi dan dokumentasi kegiatan rapat warga sebagai sarana musyawarah,
+        penyampaian aspirasi, dan pengambilan keputusan bersama.
+      </p>
+      <p><strong>Status:</strong> Dokumentasi akan ditambahkan.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/halal-bihalal.jpeg" alt="Dokumentasi Halal Bihalal 2026" class="card-img">
+      <h3>Kegiatan Sosial</h3>
+      <p>
+        Dokumentasi kegiatan sosial, gotong royong, bantuan warga, dan program
+        kebersamaan di lingkungan RT 006 / RW 13.
+      </p>
+      <p><strong>Status:</strong> Dokumentasi akan ditambahkan.</p>
+    </div>
+  </div>
+  </section>
+
+  <section id="keamanan">
+  <h2>Nomor Darurat & Keamanan</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Kontak Keamanan Lingkungan</h3>
+      <p>
+        Hubungi kontak keamanan lingkungan apabila terdapat kondisi darurat,
+        tamu mencurigakan, kehilangan, atau kejadian yang membutuhkan penanganan cepat.
+      </p>
+
+      <ul>
+        <li>Keamanan/Satpam: 0857-1487-5777</li>
+        <li>Koordinator Keamanan: 0812-9686-7555</li>
+        <li>Ketua RT: 0812-9431-7393</li>
+      </ul>
+
+      <a 
+        href="https://wa.me/6285714875777?text=Halo%20Keamanan%20RT%20006%20RW%2013%2C%20saya%20ingin%20melaporkan%20kejadian%20darurat."
+        target="_blank"
+        class="btn btn-primary"
+      >
+        Hubungi Keamanan
+      </a>
+    </div>
+
+    <div class="card">
+      <h3>Kontak Darurat Umum</h3>
+      <p>
+        Beberapa kontak darurat yang dapat digunakan warga dalam kondisi tertentu.
+      </p>
+
+      <ul>
+        <li>Polisi: 110</li>
+        <li>Ambulans/Kemenkes: 119</li>
+        <li>Pemadam Kebakaran: 113</li>
+        <li>Nomor Darurat Nasional: 112</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Imbauan Keamanan</h3>
+      <p>
+        Warga diimbau untuk selalu menjaga keamanan lingkungan bersama.
+      </p>
+
+      <ul>
+        <li>Pastikan rumah terkunci saat ditinggal.</li>
+        <li>Laporkan tamu atau aktivitas mencurigakan.</li>
+        <li>Jaga komunikasi antarwarga dan pengurus.</li>
+        <li>Hindari menyebarkan informasi yang belum terverifikasi.</li>
+      </ul>
+    </div>
+  </div>
+  </section>
+
+  <section id="kontak">
+    <h2>Kontak Pengurus</h2>
+
+    <div class="contact-box">
+      <h3>Hubungi Pengurus RT</h3>
+      <p>Silakan hubungi pengurus RT untuk informasi, layanan warga, dan pengaduan lingkungan.</p>
+      <a 
+    href="https://wa.me/6281294317393?text=Halo%20Pengurus%20RT%20006%20RW%2013%2C%20saya%20ingin%20bertanya."
+    target="_blank"
+    class="btn btn-primary"
+      >
+    WhatsApp Ketua RT
+      </a>
+
+      <a 
+    href="https://wa.me/6285884091191?text=Halo%20Pengurus%20RT%20006%20RW%2013%2C%20saya%20ingin%20bertanya."
+    target="_blank"
+    class="btn btn-primary"
+      >
+    WhatsApp Sekretaris
+      </a>
+
+      <a 
+    href="https://wa.me/6282111126555?text=Halo%20Pengurus%20RT%20006%20RW%2013%2C%20saya%20ingin%20bertanya."
+    target="_blank"
+    class="btn btn-primary"
+      >
+    WhatsApp Bendahara
+      </a>
+
+      <p style="margin-top: 20px;">
+  Email:
+      <a href="mailto:rt06.rw13.rgv@gmail.com?subject=Informasi%20Warga%20RT%20006%20RW%2013">
+    rt06.rw13.rgv@gmail.com
+      </a>
+      </p>
+    </div>
+  </section>
+
+  <footer>
+  <div class="footer-content">
+    <div class="footer-box">
+      <h3>RT 06 / RW 13</h3>
+      <p>
+        Portal informasi resmi warga Relife Greenville Cileungsi Cluster Lakesville sebagai media
+        komunikasi, pengumuman, layanan warga, dan dokumentasi kegiatan lingkungan.
+      </p>
+    </div>
+
+    <div class="footer-box">
+      <h3>Link Cepat</h3>
+      <p><a href="#beranda">Beranda</a></p>
+      <p><a href="#pengumuman">Pengumuman</a></p>
+      <p><a href="#layanan">Layanan Warga</a></p>
+      <p><a href="#data-warga">Data Warga</a></p>
+      <p><a href="#kontak">Kontak</a></p>
+    </div>
+
+    <div class="footer-box">
+      <h3>Kontak</h3>
+      <p>Relife Greenville Cileungsi Cluster Lakesville</p>
+      <p>RT 06 / RW 13</p>
+      <p>Email: <a href="mailto:rt06.rw13.rgv@gmail.com">rt06.rw13.rgv@gmail.com</a></p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    &copy; 2026 RT 06 / RW 13 Relife Greenville Cileungsi Cluster Lakesville. All rights reserved.
+  </div>
+  </footer>
+
+</body>
+</html>
